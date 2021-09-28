@@ -1,0 +1,101 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.login {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  place-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+}
+.login a {
+  color: white;
+}
+.register {
+  display: flex;
+  width: 600px;
+  height: 700px;
+  padding: 20px 75px 20px 75px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.register a {
+  color: white;
+}
+.formBtn {
+  text-align: right;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  box-sizing: border-box;
+  width: 15em;
+  height: 3em;
+  font-size: 20px;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  line-height: 3em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+  background: linear-gradient(to right, #f64f59, #c471ed);
+  text-align: left;
+  padding-left: 10%;
+  transform: perspective(500px) rotateY(45deg);
+}
+
+ul li:nth-child(even) {
+  background: linear-gradient(to left, #f64f59, #c471ed);
+  text-align: right;
+  padding-right: 10%;
+  transform: perspective(500px) rotateY(-45deg);
+}
+
+ul li:nth-child(odd):hover {
+  transform: perspective(200px) rotateY(45deg);
+  padding-left: 5%;
+}
+
+ul li:nth-child(even):hover {
+  transform: perspective(200px) rotateY(-45deg);
+  padding-right: 5%;
+}

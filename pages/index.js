@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Index() {
   return (
@@ -11,6 +12,11 @@ export default function Index() {
       <li>
         <Link href="/register" as="/register">
           <a>register</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/noexiste" as="/noexiste">
+          <a>noExiste</a>
         </Link>
       </li>
     </ul>

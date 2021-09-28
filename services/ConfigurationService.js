@@ -5,7 +5,9 @@ class ConfigurationService {
 
   //id = path name
   getById(id) {
-    const configuration = {};
+    const configuration = this.model.hasOwnProperty(id)
+      ? this.model[`${id}`]
+      : false;
     return configuration;
   }
 }

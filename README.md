@@ -52,16 +52,9 @@ Ejemplo: si nos encontramos en `/login`, el `post` se debe hacer a `/login`
 
 Idealmente hacer uso del método `getInitialProps`: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps
 
-Como resultado se deberá tener una pantalla genérica donde según la URL se cargue y se genere el contenido según la configuración, donde agregando la propiedad "recovery" a la configuración, al ingresar a "/recovery" deberíamos ver contenido nuevo sin realizar modificaciones en el FrontEnd.
-
 #### 🔧 Backend
 
 Se debe completar el código faltante del `método get de ConfigurationController - server.js (línea 28)` para retornar la configuración.
-
-#### Si eres o te postulas para Jr 👨‍💻
-
-Debes guiarte del json de configuración para crear los inputs y establecer sus propiedades, pero no debes realizarlos con autogeneración ni validaciones. Simplemente crea los formularios y envíalos al backend.
-
 
 #### 🏄 Objetivos adicionales
 
